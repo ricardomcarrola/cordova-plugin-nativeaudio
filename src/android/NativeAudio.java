@@ -3,6 +3,7 @@
 //  NativeAudio.java
 //
 //  Created by Sidney Bofah on 2014-06-26.
+//  Changed by Ricardo Carrola on 2018-04-20
 //
 
 package com.rjfun.cordova.plugin.nativeaudio;

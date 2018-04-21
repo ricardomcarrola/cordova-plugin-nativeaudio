@@ -3,6 +3,7 @@
 //  NativeAudioAssetComplex.java
 //
 //  Created by Sidney Bofah on 2014-06-26.
+//  Changed by Ricardo Carrola on 2018-04-20
 //
 
 package com.rjfun.cordova.plugin.nativeaudio;
@@ -107,7 +108,9 @@ public class NativeAudioAssetComplex implements OnPreparedListener, OnCompletion
 	        catch (IllegalStateException e)
 	        {
             // I don't know why this gets thrown; catch here to save app
-	        }
+	        }finally{
+				mp.release();
+			}
 	}
 
 	public void setVolume(float volume) 
